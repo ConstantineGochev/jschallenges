@@ -1,4 +1,4 @@
-function counting (s) {
+function solution1 (s) {
   let ret = 0;
   s = s.split('');
 
@@ -25,4 +25,4 @@ function counting (s) {
 
   return ret;
 }
-
+module.exports = {solution1}

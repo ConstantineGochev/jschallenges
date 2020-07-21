@@ -1,0 +1,24 @@
+{
+  "name": "jschallenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ConstantineGochev/jschallenges.git"
+  },
+  "keywords": [],
+  "author": "Constantine Gochev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ConstantineGochev/jschallenges/issues"
+  },
+  "homepage": "https://github.com/ConstantineGochev/jschallenges#readme",
+  "devDependencies": {
+    "jest": "^26.1.0"
+  }
+}

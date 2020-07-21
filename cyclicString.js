@@ -1,12 +1,13 @@
-function cyclicString(s) {
+function solution1(s) {
   var i=1;
   while(!s.startsWith(s.slice(i)))
   {
+    console.log("String is %s in interation in first solution",s)
     i++;
   }
   return i;
 }
-function cyclicString (str) {
+function solution2(str) {
   function getAllSubstrings(str) {
     var i, j, result = [];
     for (i = 0; i < str.length; i++) {
@@ -16,9 +17,7 @@ function cyclicString (str) {
     }
     return result;
   }
-  console.log(str);
   let substrings = getAllSubstrings(str);
-  console.log(substrings);
   let min = Number.MAX_SAFE_INTEGER;
   substrings.map(ss => {
     //console.log("test substring ", ss)
@@ -30,4 +29,8 @@ function cyclicString (str) {
   })
 
   return min;
+}
+module.exports = {
+  solution1,
+  solution2
 }
