@@ -10,17 +10,20 @@ function solution2(number) {
   let ret = [];
   let char = number[0];
   let start = 0;
-  for (var i=1; i<number.length; i++) {
-    if (number[i] === char) {
-
-    } else {
+  for (var i=1; i<=number.length; i++) {
+    if (number[i] !== char) {
       ret.push(i - start);
       ret.push(char)
       start = i;
       char = number[i];
     }
   }
-  ret.push(i - start);
-  ret.push(char)
+
   return Number(ret.join(''))
+}
+
+
+module.exports = {
+  solution1,
+  solution2
 }

@@ -21,6 +21,7 @@ function solution1 (s) {
       console.log(s, cntleft, cntright);
       if (cntright >= cntleft) ret++;
       s = s.slice(1);
+      console.log(s, cntleft, cntright);
   }
 
   return ret;
