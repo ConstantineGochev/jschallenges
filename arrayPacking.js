@@ -1,7 +1,6 @@
 function solution1(integers) {
   return integers.map((int, idx) => int << (8 * (idx))).reduce((a,c) => a + c,0);
 }
-
 function solution2(a) {
   return a.reduceRight((n, x) => (n << 8 | x) >>> 0, 0)
 }

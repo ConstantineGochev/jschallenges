@@ -13,7 +13,6 @@ function solution1 (s) {
      }
      return count;
   }
-
   while (s.length) {
       let left = s[0];
       let cntleft = count(s, s[0]);
